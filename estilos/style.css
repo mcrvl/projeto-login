@@ -7,6 +7,95 @@ verde: #49a09d
 lilás: #5f2c82
 */
 
-*{
-    
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-image: linear-gradient(#5f2c82, #49a09d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    height: 100vh;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+#imagem {
+    background: black url(../imagens/pexels-mikhail-nilov-8332754.jpg);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#formulario {}
+
+#formulario h1 {
+    text-align: center;
+}
+
+#formulario p {
+    padding: 10px;
+}
+
+input[type=email],
+input[type=password] {
+    background-color: #5ac2be;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 28px;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border: 2px solid rgb(141, 22, 125);
+    border-left: 30px solid rgb(141, 22, 125);
+    border-right: 5px solid rgb(141, 22, 125);
+}
+
+input[value=Entrar] {
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+    background-color: #199666;
+    color: white;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+input[value=Entrar]:hover {
+    background-color: white;
+    ;
+    color: #199666;
+    border: 1px solid #199666;
+}
+
+.btn-esqueceu {
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+    background-color: white;
+    ;
+    color: #474747;
+    border: 1px solid #199666;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn-esqueceu:hover {
+    background-color: #199666;
+    color: white;
 }
