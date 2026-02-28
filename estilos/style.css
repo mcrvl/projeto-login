@@ -18,6 +18,13 @@ body, html {
     background-image: linear-gradient(#5f2c82, #49a09d);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
@@ -31,8 +38,12 @@ body {
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 10px;
-    padding: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    width: 990px;
+    height: 500px;
+
+    transition : width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #imagem {
@@ -40,12 +51,21 @@ body {
     height: 200px;
     background-position: center center;
     background-size: cover;
+    float: left;
+    height: 100%;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-#formulario {}
+#formulario {
+    float: right;
+    width: 50%
+}
 
 #formulario h1 {
     text-align: center;
+    padding: 10px;
 }
 
 #formulario p {
@@ -59,7 +79,7 @@ input[type=password] {
     border-bottom-left-radius: 10px;
     height: 28px;
     padding: 10px;
-    margin: 5px;
+    margin: 0px;
     width: 100%;
     border: 2px solid rgb(141, 22, 125);
     border-left: 30px solid rgb(141, 22, 125);

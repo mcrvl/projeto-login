@@ -6,13 +6,47 @@
         padding: 0px;
         margin: 0px;
     }
-    #login {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        max-width: 500px;
+
+    body,
+    html {
+        background: #5f2c82;
     }
 
+    #login {
+        width: 250px;
+        height: 500px;
+    }
+
+    #imagem {
+        height: 200px;
+        width: 100%;
+        float: none;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    #formulario {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type=email],
+    input[type=password] {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+        #login {
+            width:90vw;
+        }
+
+        #imagem {
+            width: 30%
+        }
+
+        #formulario {
+            width: 70%
+        }
 }
