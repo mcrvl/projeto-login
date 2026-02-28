@@ -14,7 +14,8 @@ lilás: #5f2c82
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html {
+body,
+html {
     background-image: linear-gradient(#5f2c82, #49a09d);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,9 +41,9 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
     width: 990px;
-    height: 500px;
+    height: 400px;
 
-    transition : width .3s, height .3s;
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
@@ -51,15 +52,15 @@ body {
     height: 200px;
     background-position: center center;
     background-size: cover;
-    float: left;
+    float: right;
     height: 100%;
     width: 50%;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #formulario {
-    float: right;
+    float: left;
     width: 50%
 }
 
@@ -69,53 +70,83 @@ body {
 }
 
 #formulario p {
+    padding: 5px;
+}
+
+#campo {
+    background-color: #5A2D80;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 10px;
     padding: 10px;
 }
+
+
 
 input[type=email],
 input[type=password] {
     background-color: #5ac2be;
+    width: 80%;
+    height: 40px;
     border-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 28px;
-    padding: 10px;
-    margin: 0px;
-    width: 100%;
-    border: 2px solid rgb(141, 22, 125);
-    border-left: 30px solid rgb(141, 22, 125);
-    border-right: 5px solid rgb(141, 22, 125);
+    margin-top: 3px;
+    flex: 1;
+}
+
+form span {
+    font-size: 40px;
+    color: white;
+    
 }
 
 input[value=Entrar] {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
     border-radius: 10px;
     padding: 3px;
-    width: 100%;
+    width: 95%;
     background-color: #199666;
     color: white;
     border: 0px solid;
     cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
 }
 
 input[value=Entrar]:hover {
     background-color: white;
-    ;
     color: #199666;
     border: 1px solid #199666;
 }
 
 .btn-esqueceu {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
     border-radius: 10px;
     padding: 3px;
-    width: 100%;
+    width: 95%;
     background-color: white;
-    ;
     color: #474747;
     border: 1px solid #199666;
     margin-top: 5px;
     cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+
 }
 
 .btn-esqueceu:hover {
     background-color: #199666;
     color: white;
+}
+
+.material-symbols-outlined {
+    font-size: 40px
 }

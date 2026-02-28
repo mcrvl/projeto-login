@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 768px) {
 
+    /* MOBILE */
     * {
         padding: 0px;
         margin: 0px;
@@ -14,7 +15,7 @@
 
     #login {
         width: 250px;
-        height: 500px;
+        height: 570px;
     }
 
     #imagem {
@@ -31,22 +32,44 @@
         padding: 10px;
     }
 
+    #campo {
+        background-color: rgb(80, 13, 71);
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        width: 95%;
+        border-radius: 10px;
+        height: 60px;
+        padding-bottom: px
+    }
+
     input[type=email],
     input[type=password] {
-        margin-bottom: 10px;
+        background-color: #5ac2be;
+        width: 80%;
+        height: 30px;
+        border-radius: 10px;
+        margin-bottom: 190px
     }
+
+    .material-symbols-outlined {
+    font-size: 30px !important;
+}
 }
 
+/* TABLETS */
 @media screen and (min-width:768px) and (max-width: 992px) {
-        #login {
-            width:90vw;
-        }
+    #login {
+        width: 90vw;
+    }
 
-        #imagem {
-            width: 30%
-        }
+    #imagem {
+        width: 30%;
+        float: left
+    }
 
-        #formulario {
-            width: 70%
-        }
+    #formulario {
+        width: 70%;
+        float: right;
+    }
 }
