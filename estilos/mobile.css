@@ -23,6 +23,7 @@
         width: 100%;
         float: none;
         border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
         border-top-right-radius: 10px;
     }
 
@@ -65,8 +66,9 @@
 
     #imagem {
         width: 30%;
-        float: left
-        border
+        float: left;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     #formulario {
